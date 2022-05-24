@@ -122,7 +122,7 @@ function calculate(){
         const emi = (((amt*rate)*(Math.pow(1+rate,duration)))/(Math.pow(1+(rate),duration-1)));
         console.log("amt ",amt,"dur ",duration," roi",roi," emi "+emi);
         document.querySelector("#emi").innerHTML = "";
-        document.querySelector("#emi").innerHTML = "Rs (₹) " + emi.toFixed(2)+"/-";
+        document.querySelector("#emi").innerHTML = "Rs " + emi.toFixed(2)+"/-";
     }else{
         document.querySelector("#emi").innerHTML = "";
      
@@ -137,5 +137,5 @@ function calculateDeposit(){
     const emi = (((amt*(rod/100))*(Math.pow(1+(rod/100),duration)))/(Math.pow(1+(roi/100),duration-1)));
     let matureAmt = amt+parseInt(((emi).toFixed(2)));
     console.log("amt ",amt,"dur ",duration," roi",rod," emi "+emi);
-    document.querySelector("#mat").innerHTML = "Rs (₹) " +matureAmt +"/-";
+    document.querySelector("#mat").innerHTML = "Rs " +matureAmt +"/-";
 }
