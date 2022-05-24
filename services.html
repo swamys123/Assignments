@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Services</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1>State Bank Pvt Ltd.</h1>
+            <hr>
+            <a href="home.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="#">Net Banking</a>
+            
+        </div>
+
+        <h1>Services</h1>
+        
+        
+        <div id="leftSections">
+            <ol>
+                <li href="" onclick="showLoan()">Loan Service </li>
+                <br>
+                <li href="" onclick="showDeposit()">Deposit Service</li>
+            </ol>
+        </div>
+
+
+        <div class="rightSection">
+
+        <div id="loanTab" style="display: none;">
+            <table>
+                <tr>
+                    <td>
+                        Applicant : 
+                    </td>
+                    <td>
+                        <input id="applicant" type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Amount :
+                    </td>
+                    <td>
+                        <input id="amt" type="number" onchange="validateAmt()">
+                        <p id="validatoramt" style="display:none">Entered amount is invalid</p>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Type :
+                    </td>
+                    <td>
+                        <select id="ltype" onchange="setLoanType()">
+                            <option value="Home" selected>Home</option>
+                            <option value="Car">Car</option>
+                            <option value="Personal">Personal</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        ROI :
+                    </td>
+                    <td>
+                        <input id="roi" type="text" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Duration(years) : 
+                    </td>
+                    <td>
+                        <input id="dur" type="number" onblur="calculate()">
+                        <p id="validatordur" style="display:none">Entered duration invalid</p>
+                        <p id="errorDurMsg" style="display:none"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        EMI 
+                    </td>
+                    <td>
+                        <p id="emi"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="depositTab" style="display: none;">
+            <table>
+                <tr>
+                    <td>
+                        Applicant : 
+                    </td>
+                    <td>
+                        <input id="applicant" type="text" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Amount :
+                    </td>
+                    <td>
+                        <input id="amt1" type="number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Duration(years) : 
+                    </td>
+                    <td>
+                        <input id="dur1" type="number" onblur="calculateDeposit()">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        ROD :
+                    </td>
+                    <td>
+                        <input id="rod" type="text" value="5" disabled >
+                    </td>
+                </tr>
+
+               
+                <tr>
+                    <td>
+                        Maturity 
+                    </td>
+                    <td>
+                        <p id="mat"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+        <div class="footer">
+            State Bank Pvt Ltd &nbsp&nbsp&nbsp&nbsp <a href="#">Contact Us</a>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/services.js"></script>
+</html>
