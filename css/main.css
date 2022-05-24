@@ -1,1 +1,51 @@
+#loanTab{
+    border: 5px solid #1abc9c;
+    border-radius: 10px;
+    width: fit-content;
+    align-items: center;
+    position:fixed;
+
+}
+
+#depositTab{
+    border: 5px solid #1abc9c;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 20px;
+    height: 100px;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    background-color: #1abc9c;
+    color: white;
+    text-align: center;
+  }
+.welcomeMsg{
+      color: burlywood;
+      text-align: center;
+      text-decoration: burlywood;
+      font-size: 40px;
+}
+
+.intro{
+    text-align: center;
+    font-size: 20px;
+}
+  
+a {
+      color: crimson;
+  }
+
 
